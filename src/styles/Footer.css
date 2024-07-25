@@ -1,21 +1,23 @@
+/* General Footer Styles */
 .footer {
   width: 100%;
-  height: 200px;
   background-color: #121619;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  padding-top: 10px;
-}
-
-.socialMedia svg {
-  color: white;
-  margin: 20px;
-  font-size: 70px;
-  cursor: pointer;
+  align-items: center;
+  padding: 20px; /* Add padding for spacing */
+  box-sizing: border-box; /* Include padding in the total width and height */
 }
 
 .footer p {
   color: white;
+  margin: 10px 0; /* Adjust margin for spacing */
+}
+
+/* Social Media Icons */
+.socialMedia svg {
+  color: white;
+  margin: 10px; /* Adjusted margin */
+  font-size: 50px; /* Adjusted size for responsiveness */
+  cursor: pointer;
 }

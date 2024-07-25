@@ -1,8 +1,10 @@
+/* About Section Styles */
 .about {
   width: 100%;
   height: 90vh;
   display: flex;
   flex-direction: column;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .aboutTop {
@@ -11,7 +13,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .aboutBottom {
@@ -23,15 +24,42 @@
 }
 
 .aboutBottom p {
-  width: 1200px;
+  width: 90%; /* Use a percentage width for responsiveness */
+  max-width: 1200px; /* Set a max-width to prevent overly large text on wide screens */
+  margin: 0 auto; /* Center the paragraph */
+  text-align: center; /* Center align text */
 }
 
 .about .aboutBottom h1 {
   font-weight: 400;
   font-size: 70px;
   color: black;
-  height: 30px;
+  height: auto; /* Adjust height for better text flow */
   display: flex;
   justify-content: center;
   transform: translateY(-40px);
+}
+
+@media only screen and (max-width: 1200px) {
+  .aboutBottom p {
+    width: 95%; /* Increase width on smaller screens */
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .about .aboutBottom h1 {
+    font-size: 50px; /* Adjust font size for smaller screens */
+  }
+
+  .aboutBottom p {
+    font-size: 18px; /* Adjust font size for smaller screens */
+    padding: 0 20px; /* Add padding to ensure readability */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .aboutBottom p {
+    font-size: 16px; /* Further adjust font size for very small screens */
+    padding: 0 10px; /* Reduce padding for smaller screens */
+  }
 }
